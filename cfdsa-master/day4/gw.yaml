@@ -1,0 +1,17 @@
+apiVersion: networking.istio.io/v1alpha3
+
+kind: Gateway
+
+metadata:
+  name: fapp-gateway
+
+spec:
+  spectator:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: http
+    hosts:
+    - fapp.139.59.221.55.nip.io

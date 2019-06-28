@@ -1,0 +1,7 @@
+kind:apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bggdbconfigmap
+  namespace: workshop02
+data:
+  ports: value
